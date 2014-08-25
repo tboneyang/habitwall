@@ -11,3 +11,71 @@
  *= require_self
  *= require_tree .
  */
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+a:link, a:active, a:visited, a:hover {
+	color: white; 
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#header{
+	padding: 10px;
+	background: #ee5;
+}
+
+#content {
+	padding:10px;
+	padding-bottom:80px;
+}
+
+#footer{
+	width:100%;
+	height:80px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:#ee5;
+}
+
+#shadowh{
+	font-family:"Paytone One", sans-serif ;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	font-size: 60px;
+	color:white;
+	font-weight: bold;
+}
+
+#hnav{
+	padding:10px;
+	float:right;
+	font-size: 40px;
+	color:white;
+	
+}
+
+a.glow:link, a.glow:hover a.glow:focus{
+	text-decoration: none;
+	color: #aaf;
+	text-shadow: none;
+	-webkit-transition: 100ms linear 0s;
+	-moz-transition: 100ms linear 0s;
+	-o-transition: 100ms linear 0s;
+	transition: 100ms linear 0s;
+	outline: 0 none;
+}
+
+a.glow:hover, a.glow:focus{
+	color: #fff;
+	text-shadow:-2px 2px 8px #ffc, 2px -2px 8px #fff;
+}

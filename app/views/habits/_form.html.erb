@@ -1,0 +1,20 @@
+<%= form_for @habit do |h| %>
+	<p>
+		<%= h.label :title %><br>
+		<%= h.text_field :title %>
+	</p>
+
+	<p>
+		<%= h.label :text %><br>
+		<%= h.text_area :text %><br>
+	</p>
+
+	<p>
+		<%= h.label :completed %><br>
+		<%= h.text_field :completed %>
+	<p>
+
+	<p>
+		<%= h.label :time %><br>
+		<%= h.text_field :time %>
+	<p>
